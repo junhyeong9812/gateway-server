@@ -22,7 +22,7 @@ public class SecurityConfig {
 //                        .pathMatchers("/v1/order/**").hasRole("USER")
                         .anyExchange().permitAll()
                 )
-                .oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> jwt.jwtAuthenticationConverter(conv)))
+//                .oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> jwt.jwtAuthenticationConverter(conv)))
                 .build();
     }
 
