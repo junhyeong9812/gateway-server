@@ -9,6 +9,9 @@ spring:
 #        enabled: true
 #        service-id: config-server
 
+logging:
+  level:
+    root: debug
 
 eureka:
   instance:
